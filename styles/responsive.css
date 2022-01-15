@@ -1,0 +1,35 @@
+@media (max-width: 1399.98px) {
+/*header*/
+.header-area__heading {
+    font-size: 53px;
+}
+
+.header-area {
+    background-position: top right,
+    top left;
+}
+
+/*video*/
+.controls {
+    top: 35rem;
+}
+
+
+/*footer*/
+.email-wrapper__input {
+    width: 360px;
+}
+}
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 991.98px) {}
+
+/*Medium devices (tablets, 767px and down)*/
+@media (max-width: 767.98px) {}
+
+/*Small devices (landscape phones, 575px and down)*/
+@media (max-width: 575px) {}
+
+/* (320x480) Smartphone, Portrait */
+@media only screen and (device-width: 320px) and (orientation: portrait) {}
