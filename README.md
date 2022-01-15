@@ -1,0 +1,2 @@
+# alias
+My study project
