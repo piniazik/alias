@@ -75,6 +75,14 @@
         text-align: center;
     }
 
+    .header-menu__list {
+        padding-inline-start: 0px;
+    }
+
+    .header-menu__navigation {
+        justify-content: end;
+    }
+
     .header-area {
         background-image: none;
     }
@@ -94,7 +102,7 @@
     }
 
     .menu-toggle {
-        padding-right: 2rem;
+        padding-left: 6rem;
     }
 
     .header-area__circle {
@@ -121,6 +129,15 @@
 
     .browse-area__img {
         height: 273.37px;
+    }
+
+    /*top collection*/
+    .strip-description__text {
+        font-size: 16px;
+    }
+
+    .strip-percent {
+        font-size: 16px;
     }
 
     /*trending block*/
