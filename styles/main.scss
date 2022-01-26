@@ -138,6 +138,81 @@ div.mt-30 {
     color: $white;
 }
 
+/*header burger menu*/
+.burger-mobile {
+    display: none;
+}
+
+.menu-toggle {
+    color: #A12669;
+    cursor: pointer;
+    display: none;
+}
+
+.bg-menu {
+    background-color: #D27665;
+     background-image: none;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.hamburger {
+    width: 40px;
+    height: 4px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: #A12669;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    display: inline-block;
+    margin-left: 12px;
+}
+
+.hamburger:after,
+.hamburger:before {
+    content: "";
+    width: 40px;
+    height: 4px;
+    position: absolute;
+    background: #A12669;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.hamburger:before {
+    top: -16px;
+}
+
+.hamburger:after {
+    top: 16px;
+}
+
+.icon.active .hamburger {
+    background: rgba(0, 0, 0, 0);
+}
+
+.icon.active .hamburger:before {
+    top: 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.icon.active .hamburger:after {
+    top: 0;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+/*burger menu close*/
 /*header*/
 .header-logo {
     display: -webkit-box;
@@ -868,6 +943,19 @@ button.slick-prev:before,
     overflow: hidden;
 }
 
+.video-case {
+    position: relative;
+}
+
+.video-button {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
 .video-box video {
     position: absolute;
     top: 0;
@@ -889,13 +977,15 @@ button.slick-prev:before,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
     position: relative;
     top: 41.2rem;
     height: 70px;
-    background: #eee;
+    background: #FFC0CB;
     border-radius: 0 0 50px 50px;
+}
+
+.controls-none {
+    display: none;
 }
 
 .paused {
@@ -905,6 +995,7 @@ button.slick-prev:before,
     text-align: center;
     cursor: pointer;
     margin-left: 3rem;
+    margin-right: 1rem;
 
     &:hover {
         cursor: pointer;
@@ -934,28 +1025,39 @@ button.slick-prev:before,
     cursor: pointer;
     width: 20px;
     height: 20px;
+    margin-left: 3rem;
 }
 
 .video-nosound {
-     background-color: transparent;
-     border: none;
-     background-image: url(..//images/no-audio.png);
-     background-repeat: no-repeat;
-     background-size: cover;
-     cursor: pointer;
-     width: 20px;
-     height: 20px;
+    background-color: transparent;
+    border: none;
+    background-image: url(..//images/no-audio.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
 }
 
 .video-fullscreen {
-      background-color: transparent;
-      border: none;
-      background-image: url(..//images/full-screen.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-      cursor: pointer;
-      width: 20px;
-      height: 20px;
+    background-color: transparent;
+    border: none;
+    background-image: url(..//images/full-screen.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.video-range {
+    margin-left: 1rem;
+    margin-right: 3rem;
+    border-radius: 50px;
+}
+
+.video-time {
+    margin-left: 1rem;
 }
 
 input[type=range] {
@@ -978,13 +1080,12 @@ input[type=range]::-webkit-slider-runnable-track {
 input[type=range]::-webkit-slider-thumb {
     box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
     border: 0px solid #000000;
-    height: 15px;
-    width: 15px;
+    height: 10px;
+    width: 10px;
     border-radius: 50px;
     background: #000;
     cursor: pointer;
     -webkit-appearance: none;
-    margin-top: -3.6px;
 }
 
 input[type=range]:focus::-webkit-slider-runnable-track {
@@ -1003,7 +1104,7 @@ input[type=range]::-moz-range-track {
 input[type=range]::-moz-range-thumb {
     box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
     border: 0px solid #000000;
-    height: 20px;
+    height: 15px;
     width: 39px;
     border-radius: 7px;
     background: #000;
@@ -1039,7 +1140,7 @@ input[type=range]::-ms-thumb {
     height: 20px;
     width: 39px;
     border-radius: 7px;
-    background:  #000;
+    background: #000;
     cursor: pointer;
 }
 
@@ -1049,6 +1150,28 @@ input[type=range]:focus::-ms-fill-lower {
 
 input[type=range]:focus::-ms-fill-upper {
     background: #DCDCDC;
+}
+
+.position-bar {
+    height: 10px;
+    font-weight: bold;
+    background-color: #000;
+    border-radius: 50px;
+}
+
+.position-bar span {
+    display: inline-block;
+}
+
+.duration-bar {
+    width: 100%;
+    background: #DCDCDC;
+    border-radius: 50px;
+}
+
+.bar-container {
+    width: 800px;
+    cursor: pointer;
 }
 
 /*footer*/
@@ -1065,6 +1188,10 @@ input[type=range]:focus::-ms-fill-upper {
     -webkit-padding-start: 0px;
     -moz-padding-start: 0px;
     padding-inline-start: 0px;
+}
+
+.email-form {
+    position: relative;
 }
 
 .email-wrapper {
@@ -1126,6 +1253,36 @@ input[type=range]:focus::-ms-fill-upper {
     }
 }
 
+.error-border {
+    border: 5px solid #ff0000;
+}
+
+.correctly-border {
+     border: 5px solid #008000;
+}
+
+.correctly {
+    font-family: "Arial-400";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #008000;
+    position: absolute;
+    left: 1rem;
+    top: 54px;
+}
+
+.error {
+    font-family: "Arial-400";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #ff0000;
+    position: absolute;
+    left: 1rem;
+    top: 54px;
+}
+
 .alias-wrapper {
 
     &__description {
@@ -1152,8 +1309,6 @@ input[type=range]:focus::-ms-fill-upper {
         color: #D27665;
     }
 }
-
-.footer-logo {}
 
 .social-heading {
     font-family: "Arial-400";

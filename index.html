@@ -56,7 +56,7 @@
                     </div>
                     <div class="col-md-9 col-5 header-menu">
                         <nav class="header-menu__navigation" role="navigation">
-                            <ul class="header-menu__list text-align-center">
+                            <ul class="header-menu__list text-align-center burger-desctop">
                                 <li class="header-menu__item"><a class="header-menu__link" href="index.html">EXPLORE</a>
                                 </li>
                                 <li class="header-menu__item"><a class="header-menu__link"
@@ -64,6 +64,21 @@
                                 <li class="header-menu__item"><a class="header-menu__link" href="index.html">CREATE</a>
                                 </li>
                             </ul>
+                            <!--mobile burger menu open-->
+                            <div class="menu-toggle icon">
+                                <div class="hamburger"></div>
+                            </div>
+                                <ul class="menu header-menu__list text-align-center burger-mobile">
+                                <div class="d-flex flex-column">
+                                <li class="header-menu__item pt-5"><a class="header-menu__link" href="index.html">EXPLORE</a>
+                                </li>
+                                <li class="header-menu__itemp pt-5"><a class="header-menu__link"
+                                        href="index.html">RESOURCE</a></li>
+                                <li class="header-menu__item pt-5"><a class="header-menu__link" href="index.html">CREATE</a>
+                                </div>
+                                </li>
+                            </ul>
+                            <!--mobile burger menu close-->
                         </nav>
                     </div>
                 </div>
@@ -79,7 +94,7 @@
                             <h1 class="header-area__heading scroll-element js-scroll fade-in">Discover, collect and sell extraordinary NTFs</h1>
                             <a class="btn header-area__btn scroll-element js-scroll fade-in" href="index.html">EXPLORE</a>
                         </div>
-                        <div class="col-lg-7 mt-30">
+                        <div class="col-lg-6 mt-30">
                             <p class="header-area__description scroll-element js-scroll fade-in">Sed ut perspiciatis unde omnis iste natus error sit
                                 voluptatem accusantium
                                 doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
@@ -448,30 +463,36 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="row g-30">
-                            <div class="col-lg-12 scroll-element js-scroll fade-in">
+                            <div class="col-lg-12 video-case scroll-element js-scroll fade-in">
+                                 <img class="video-button" src="images/video-btn.png" alt="video button">
                                 <div class="video-box player">
                                     <div class="video-player" id="video-controls">
                                         <video class="video" id="video" preload="metadata" poster="images/nyan-cat.jpg">
                                             <source src="video/What_is_an_NFT.mp4" type="video/mp4">
                                             </source>
                                         </video>
-                                        <div class="controls" id="controls">
+                                        <div class="controls controls-none" id="controls">
+                                            <div class="d-flex align-items-center">
                                             <button class="paused" id="playpause"><span class="icon-play">►</span><span
-                                                    class="icon-pause">❚ ❚</span></button>
-                                            <span class="video-progress" id="progress">
-                                                <span class="video-total" id="total">
-                                                    <span class="video-buffered" id="buffered">
-                                                        <span class="video-current" id="current"></span>
-                                                    </span>
-                                                </span>
+                                                    class="icon-pause">❚ ❚</span>
+                                            </button>
+                                            <div class="bar-container">
+                                            <div id="durationBar" class="duration-bar">
+                                                <div id="positionBar" class="position-bar"><span id="displayStatus" class="display-status"></span></div>
+                                            </div>
+                                            </div>
+                                          <span class="video-time" id="time">
+                                                <span class="video-currenttime" id="currentTime">00:00</span>
+                                                <span class="video-duration" id="totalTime"></span>
                                             </span>
-                                                <span class="video-time" id="time">
-                                                    <span class="video-currenttime" id="currenttime">00:00</span>
-                                                <span class="video-duration" id="duration">00:00</span>
-                                            </span>
-                                            <input  type="range" min="0" max="10" value="5" step="0.1" class="video-range" id="volumeControl">
+                                            </div>
+                                            <div class="d-flex align-items-center">
                                             <input type="button" class="video-mutebutton" id="mutebutton">
+                                            <input  type="range" min="0" max="10" value="5" step="0.1" class="video-range" id="volumeControl">
+                                            </div>
+                                            <div class="d-flex align-items-center">
                                             <input type="button" class="video-fullscreen" id="fullscreen">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -483,7 +504,7 @@
         </div>
     </main>
     <!--footer-->
-    <footer class="footer top-160 bottom-160">
+    <footer class="footer top-160 pb-5">
         <div class="footer-area">
             <div class="container">
                 <div class="row">
@@ -501,11 +522,11 @@
                                 </p>
                             </div>
                             <div class="col-lg-7 mt-30 email-wrapper align-self-center">
-                                <form action="">
+                                <form action="" class="email-form">
                                     <label for=""></label>
-                                    <input class="email-wrapper__input" type="text" name="Your email address"
-                                        placeholder="Your email address...">
-                                    <input class="email-wrapper__btn btn btn" type="submit" value="SIGN UP">
+                                    <input class="email-wrapper__input" id="userEmail" type="text" name="Your email address"
+                                        placeholder="Your email address..." value="" size="32">
+                                    <input class="email-wrapper__btn btn btn" id="btn-submit" type="submit" value="SIGN UP" >
                                 </form>
                             </div>
                             <div class="col-lg-5 mt-30 alias-wrapper scroll-element js-scroll fade-in">
