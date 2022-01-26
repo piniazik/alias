@@ -1,35 +1,212 @@
 @media (max-width: 1399.98px) {
-/*header*/
-.header-area__heading {
-    font-size: 53px;
-}
 
-.header-area {
-    background-position: top right,
-    top left;
-}
+    /*header*/
+    .header-area__heading {
+        font-size: 53px;
+    }
 
-/*video*/
-.controls {
-    top: 35rem;
-}
+    .header-area {
+        background-position: top right,
+            top left;
+    }
 
+    /*video*/
+    .controls {
+        top: 35rem;
+    }
 
-/*footer*/
-.email-wrapper__input {
-    width: 360px;
-}
+    .bar-container {
+        width: 600px;
+    }
+
+    /*footer*/
+    .email-wrapper__input {
+        width: 360px;
+    }
 }
 
 @media (max-width: 1199.98px) {}
 
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+    .burger-mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .burger-desctop {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        position: fixed;
+        background-color: #D27665;
+        top: 4.6rem;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 10000;
+    }
+}
 
 /*Medium devices (tablets, 767px and down)*/
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+    .email-wrapper__input {
+        width: 300px;
+    }
+}
 
 /*Small devices (landscape phones, 575px and down)*/
-@media (max-width: 575px) {}
+@media (max-width: 575px) {
+
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /*header*/
+    .header-area__heading {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .header-area {
+        background-image: none;
+    }
+
+    .header-area__description {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .heading-box {
+        text-align: center;
+        background-image: none;
+    }
+
+    .top-160 {
+        padding-top: 70px;
+    }
+
+    .menu-toggle {
+        padding-right: 2rem;
+    }
+
+    .header-area__circle {
+        height: 200px;
+    }
+
+    .header-area__square {
+        height: 200px;
+    }
+
+    .header-area__ellipse {
+        height: 200px;
+    }
+
+    .header-area__oval {
+        height: 200px;
+    }
+
+    /*browse block*/
+    .browse-area__heading {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .browse-area__img {
+        height: 273.37px;
+    }
+
+    /*trending block*/
+    .gouse-images {
+        height: 240px;
+    }
+
+    .herwitz-images {
+        height: 240px;
+    }
+
+    .stanton-images {
+        height: 240px;
+    }
+
+    /*top block*/
+    .collection-heading {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .strip-box {
+        width: 100%;
+    }
+
+    /*trending block*/
+    .trending-area__heading {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    /*video block*/
+    .video-button {
+        width: 50px;
+    }
+
+    /*email block*/
+    .email-wrapper__heading {
+        font-size: 35px;
+    }
+
+    .email-wrapper__description {
+        font-size: 16px;
+        padding-right: 0rem;
+    }
+
+    .email-wrapper__input {
+        width: 65%;
+    }
+
+    .email-wrapper {
+        text-align: center;
+    }
+
+    .btn {
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+
+    .email-wrapper__input {
+        font-size: 13px;
+    }
+
+    /*alias block*/
+    .alias-wrapper__description {
+        font-size: 16px;
+        padding-right: 0rem;
+    }
+
+    .footer-logo {
+        display: inline;
+    }
+
+    .alias-wrapper {
+        text-align: center;
+    }
+
+    /*footer*/
+    .social-heading {
+        font-size: 16px;
+    }
+
+    .footer-list__link {
+        font-size: 14px;
+    }
+}
 
 /* (320x480) Smartphone, Portrait */
 @media only screen and (device-width: 320px) and (orientation: portrait) {}
