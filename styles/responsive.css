@@ -83,6 +83,10 @@
         justify-content: end;
     }
 
+    .header-menu {
+        position: relative;
+    }
+
     .header-area {
         background-image: none;
     }
@@ -102,7 +106,7 @@
     }
 
     .menu-toggle {
-        padding-left: 6rem;
+        position: absolute;
     }
 
     .header-area__circle {

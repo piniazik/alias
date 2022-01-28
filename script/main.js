@@ -227,6 +227,9 @@ $(document).ready(function () {
   if(video.paused){
     video.play();
     $('.video-button').hide();
+    $('.icon-play').toggleClass('none');
+    $('.icon-pause ').toggleClass('block');
+
   }else{
     video.pause();
     $('.video-button').show();

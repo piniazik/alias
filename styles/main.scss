@@ -925,13 +925,16 @@ div.slick-list {
     object-fit: cover;
 }
 
+.trending-slider__link {
+    &:hover {
+        color: $hover;
+    }
+}
+
 ul.slick-dots {
     bottom: -50px;
 }
 
-.trending-element {}
-
-.herwitz-images {}
 
 .trending-slider {
 

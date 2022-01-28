@@ -979,6 +979,10 @@ div.slick-list {
   object-fit: cover;
 }
 
+.trending-slider__link:hover {
+  color: #D27665;
+}
+
 ul.slick-dots {
   bottom: -50px;
 }
