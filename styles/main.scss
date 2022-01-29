@@ -926,6 +926,7 @@ div.slick-list {
 }
 
 .trending-slider__link {
+    transition: all .9s ease;
     &:hover {
         color: $hover;
     }
@@ -1383,6 +1384,20 @@ input[type=range]:focus::-ms-fill-upper {
     line-height: 21px;
     color: #A12669;
     margin: 0;
+}
+
+.author-block {
+    &__link {
+        font-family: "Arial-400";
+        font-weight: bold;
+        font-size: 18px;
+        color: #A12669;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: #D27665;
+        }
+    }
 }
 
 /* begin Back to Top button  */

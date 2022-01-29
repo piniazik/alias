@@ -979,6 +979,11 @@ div.slick-list {
   object-fit: cover;
 }
 
+.trending-slider__link {
+  -webkit-transition: all .9s ease;
+  transition: all .9s ease;
+}
+
 .trending-slider__link:hover {
   color: #D27665;
 }
@@ -1426,6 +1431,19 @@ input[type=range]:focus::-ms-fill-upper {
   line-height: 21px;
   color: #A12669;
   margin: 0;
+}
+
+.author-block__link {
+  font-family: "Arial-400";
+  font-weight: bold;
+  font-size: 18px;
+  color: #A12669;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.author-block__link:hover {
+  color: #D27665;
 }
 
 /* begin Back to Top button  */
