@@ -125,6 +125,7 @@
 
     .header-area__oval {
         height: 200px;
+         object-fit: initial;
     }
 
     /*browse block*/
