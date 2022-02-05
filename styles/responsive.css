@@ -109,25 +109,6 @@
         position: absolute;
     }
 
-    .header-area__circle {
-        height: 200px;
-        object-fit: initial;
-    }
-
-    .header-area__square {
-        height: 200px;
-        object-fit: initial;
-    }
-
-    .header-area__ellipse {
-        height: 200px;
-    }
-
-    .header-area__oval {
-        height: 200px;
-         object-fit: initial;
-    }
-
     /*browse block*/
     .browse-area__heading {
         font-size: 35px;
